@@ -1,8 +1,8 @@
 const _ = require('lodash');
 
 module.exports = { add: add, list: list, find: find };
-
-var data = [];
+//change this >
+var data = [{name: 'nimit', content: 'Tweet'}];
 
 function add (name, content) {
   data.push({ name: name, content: content });
