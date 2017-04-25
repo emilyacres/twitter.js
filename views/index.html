@@ -15,7 +15,10 @@
 
       <!-- display tweets here -->
       {% for tweet in tweets %}
-        <li>{{tweet.content}}</li>
+        <li>
+          <h4>{{tweet.name}}</h4>
+          <p>{{tweet.content}}<span> #fullstacklove #codedreams</span></p>
+        </li>
       {% endfor %}
 
     </div>
