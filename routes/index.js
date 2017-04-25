@@ -14,4 +14,8 @@ router.get('/users/:name', function (req, res) {
   res.render( 'index', {tweets: tweetBank.find({name: req.params.name})});
 });
 
+router.get('/tweets/:id', function (req, res) {
+  //console.log(tweetBank.list());
+  res.render('index', {tweets: tweetBank.find({id: +req.params.id})})
+})
 module.exports = router;

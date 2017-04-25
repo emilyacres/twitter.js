@@ -4,8 +4,8 @@ module.exports = { add: add, list: list, find: find };
 //change this >
 var data = [{name: 'nimit', content: 'Tweet'}];
 
-function add (name, content) {
-  data.push({ name: name, content: content });
+function add (name, content, id) {
+  data.push({ name: name, content: content, id: id });
 }
 
 function list () {
@@ -32,6 +32,6 @@ const getFakeTweet = function(){
 };
 
 for (let i = 0; i < 10; i++){
-  module.exports.add(getFakeName(), getFakeTweet());
+  module.exports.add(getFakeName(), getFakeTweet(), i);
 }
 
